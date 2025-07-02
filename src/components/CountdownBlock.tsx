@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FadeInSection from "./core/animations/FadeInSection.tsx";
 
 const getTimeRemaining = () => {
   const now = new Date();
@@ -25,41 +26,43 @@ const CountdownBlock = () => {
   }, []);
 
   return (
-    <section className="w-full py-10 px-4 bg-pastel1 text-center">
-      <h2 className="text-2xl font-playfair mb-4">До свадьбы осталось</h2>
-      {timeLeft.total > 0 ? (
-        <div className="flex justify-center gap-4 text-xl font-light font-playfair">
-          <div>
-            <span className="block text-3xl font-semibold">
-              {timeLeft.days}
-            </span>
-            <span>дней</span>
+    <FadeInSection>
+      <section className="w-full py-10 px-4 bg-pastel1 text-center">
+        <h2 className="text-2xl font-playfair mb-4">До свадьбы осталось</h2>
+        {timeLeft.total > 0 ? (
+          <div className="flex justify-center gap-4 text-xl font-light font-playfair">
+            <div>
+              <span className="block text-3xl font-semibold">
+                {timeLeft.days}
+              </span>
+              <span>дней</span>
+            </div>
+            <div>
+              <span className="block text-3xl font-semibold">
+                {timeLeft.hours}
+              </span>
+              <span>часов</span>
+            </div>
+            <div>
+              <span className="block text-3xl font-semibold">
+                {timeLeft.minutes}
+              </span>
+              <span>минут</span>
+            </div>
+            <div>
+              <span className="block text-3xl font-semibold">
+                {timeLeft.seconds}
+              </span>
+              <span>секунд</span>
+            </div>
           </div>
-          <div>
-            <span className="block text-3xl font-semibold">
-              {timeLeft.hours}
-            </span>
-            <span>часов</span>
-          </div>
-          <div>
-            <span className="block text-3xl font-semibold">
-              {timeLeft.minutes}
-            </span>
-            <span>минут</span>
-          </div>
-          <div>
-            <span className="block text-3xl font-semibold">
-              {timeLeft.seconds}
-            </span>
-            <span>секунд</span>
-          </div>
-        </div>
-      ) : (
-        <p className="text-xl font-light font-playfair">
-          Свадьба уже началась!
-        </p>
-      )}
-    </section>
+        ) : (
+          <p className="text-xl font-light font-playfair">
+            Свадьба уже началась!
+          </p>
+        )}
+      </section>
+    </FadeInSection>
   );
 };
 
