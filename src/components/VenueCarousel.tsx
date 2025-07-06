@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const base = import.meta.env.BASE_URL;
 const images = [`${base}img/venue1.jpg`, `${base}img/venue2.jpg`];
 
-const swipeConfidenceThreshold = 10000;
+const swipeConfidenceThreshold = 1000;
 const swipePower = (offset: number, velocity: number) =>
   Math.abs(offset) * velocity;
 
@@ -141,6 +141,7 @@ const VenueCarousel = () => {
                 src={images[modalIndex]}
                 alt={`Venue ${modalIndex + 1}`}
                 className="rounded-lg shadow-xl max-h-[90vh] max-w-[90vw] object-contain"
+                draggable={false}
               />
             </motion.div>
           </motion.div>
