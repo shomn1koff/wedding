@@ -13,7 +13,7 @@ const SurveyBlock = () => {
         </p>
 
         <a
-          href="https://forms.gle/yipxuwFtHJNpnvEr7"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdUM6WBJ539rAXU9BTQe15O84UveaNG12wrvpxZXyWJoXelAw/viewform"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-pink-600 hover:bg-pink-100 transition px-6 py-3 rounded-full font-semibold shadow-md"
