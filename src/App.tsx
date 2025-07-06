@@ -8,6 +8,8 @@ import SurveyBlock from "./components/SurveyBlock.tsx";
 import PhotosBlock from "./components/PhotosBlock.tsx";
 import DressCodeBlock from "./components/DressCodeBlock.tsx";
 import TelegramQRBlock from "./components/TelegramQRBlock.tsx";
+import VenueBlock from "./components/VenueBlock.tsx";
+import AgeBlock from "./components/AgeBlock.tsx";
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
       <InvitationText />
       <CalendarBlock />
       <MapBlock />
+      <VenueBlock />
       <CountdownBlock />
       <ScheduleBlock />
       <SurveyBlock />
       <PhotosBlock />
+      <AgeBlock />
       <DressCodeBlock />
       <TelegramQRBlock />
     </div>

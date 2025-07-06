@@ -27,7 +27,7 @@ const CountdownBlock = () => {
 
   return (
     <FadeInSection>
-      <section className="w-full py-10 px-4 bg-pastel1 text-center">
+      <section className="w-full py-10 px-4 bg-pastel3 text-center">
         <h2 className="text-2xl font-playfair mb-4">До свадьбы осталось</h2>
         {timeLeft.total > 0 ? (
           <div className="flex justify-center gap-4 text-xl font-light font-playfair">
