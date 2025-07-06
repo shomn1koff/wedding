@@ -20,7 +20,7 @@ const CalendarBlock = () => {
 
   return (
     <FadeInSection>
-      <section className="w-full py-10 px-4 bg-pastel3 text-center">
+      <section className="w-full py-10 px-4 bg-pastel1 text-center">
         <h2 className="text-2xl font-medium font-playfair mb-6">Август 2025</h2>
 
         <div className="max-w-md mx-auto p-4 rounded-lg bg-pastel2 shadow-md">

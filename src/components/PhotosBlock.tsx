@@ -10,14 +10,13 @@ const PhotosBlock = () => {
         <p className="mb-6 font-playfair text-gray-700">
           Здесь будут фото с мероприятия!
         </p>
-        <a
-          href="https://example.com/your-photo-folder"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-white text-pink-600 hover:bg-pink-100 transition px-6 py-3 rounded-full font-semibold shadow-md"
+        <button
+          disabled
+          className="inline-block bg-white text-gray-400 px-6 py-3 rounded-full font-semibold shadow-md cursor-not-allowed opacity-70"
+          style={{ pointerEvents: "none" }}
         >
           Перейти к фото
-        </a>
+        </button>
       </section>
     </FadeInSection>
   );

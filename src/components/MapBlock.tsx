@@ -11,7 +11,7 @@ const MapBlock = () => {
           Место проведения
         </h2>
 
-        <div className="w-full max-w-2xl mx-auto h-64 rounded-lg overflow-hidden shadow-md">
+        <div className="w-full max-w-md mx-auto h-64 rounded-lg overflow-hidden shadow-md">
           <YMaps>
             <Map
               defaultState={{ center: coordinates, zoom: 16 }}
@@ -23,12 +23,8 @@ const MapBlock = () => {
             </Map>
           </YMaps>
         </div>
-        <p className="mt-2 text-lg md:text-xl font-light font-playfair text-gray-800 leading-relaxed tracking-wide max-w-3xl mx-auto">
-          Как доехать
-        </p>
-        <p className="mt-2 text-lg md:text-xl font-light font-playfair text-gray-800 leading-relaxed tracking-wide max-w-3xl mx-auto">
-          В навигаторе напишите: Кабинет и квартира В.И. Ленина, 12 км от МКАД.
-          КПП №3!
+        <p className="mt-2 max-w-md text-lg md:text-xl font-light font-playfair text-gray-800 leading-relaxed tracking-wide mx-auto">
+          Адрес: Кабинет и квартира В.И. Ленина, 12 км от МКАД. КПП №3!
         </p>
       </section>
     </FadeInSection>
