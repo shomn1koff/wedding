@@ -10,13 +10,11 @@ import DressCodeBlock from "./components/DressCodeBlock.tsx";
 import TelegramQRBlock from "./components/TelegramQRBlock.tsx";
 import VenueBlock from "./components/VenueBlock.tsx";
 import AgeBlock from "./components/AgeBlock.tsx";
-import PhotoGallery from "./components/PhotoGallery.tsx";
 
 function App() {
   return (
     <div className="flex flex-col">
       <Header />
-      <PhotoGallery />
       <InvitationText />
       <CalendarBlock />
       <MapBlock />
