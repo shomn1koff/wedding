@@ -6,7 +6,7 @@ const MapBlock = () => {
 
   return (
     <FadeInSection>
-      <section className="w-full py-10 bg-pastel2 text-center px-4">
+      <section className="w-full py-10 bg-pastel1 text-center px-4">
         <h2 className="text-2xl font-medium font-playfair mb-4">
           Место проведения
         </h2>
